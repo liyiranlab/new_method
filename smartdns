@@ -1,0 +1,86 @@
+
+config smartdns
+	option enabled '0'
+	option server_name 'smartdns'
+	option port '6053'
+	option auto_set_dnsmasq '1'
+	option tcp_server '1'
+	option tls_server '0'
+	option doh_server '1'
+	option ipv6_server '1'
+	option bind_device '1'
+	option dualstack_ip_selection '0'
+	option serve_expired '0'
+	option cache_persist '0'
+	option resolve_local_hostnames '1'
+	option force_https_soa '1'
+	option rr_ttl_min '600'
+	option seconddns_port '6553'
+	option seconddns_tcp_server '1'
+	option log_output_mode 'file'
+	option doh_server_port '843'
+	option cache_size '20001'
+	option mdns_lookup '1'
+	option old_port '6053'
+	option old_enabled '1'
+	option old_auto_set_dnsmasq '1'
+
+config domain-rule
+	option dualstack_ip_selection 'no'
+
+config client-rule
+	option enabled '0'
+	option dualstack_ip_selection '0'
+	option force_https_soa '1'
+
+config ip-rule
+
+config server
+	option enabled '1'
+	option name 'ChinaMobile'
+	option ip '211.139.5.29'
+	option type 'udp'
+	option server_group 'cn'
+
+config server
+	option enabled '1'
+	option name 'ChinaMobile'
+	option ip '2409:806a:2010::2'
+	option type 'udp'
+	option server_group 'cn'
+
+config server
+	option enabled '1'
+	option name 'tencent.com'
+	option ip 'https://120.53.53.53/dns-query'
+	option type 'udp'
+	option server_group 'cn'
+
+config server
+	option enabled '0'
+	option name '360'
+	option ip '101.226.4.6'
+	option type 'udp'
+	option server_group 'cn'
+
+config server
+	option enabled '0'
+	option name 'tencent'
+	option ip 'tls://120.53.53.53'
+	option type 'udp'
+	option server_group 'cn'
+
+config server
+	option enabled '1'
+	option name 'Ali'
+	option ip '223.6.6.6'
+	option type 'udp'
+	option server_group 'cn'
+
+config server
+	option enabled '0'
+	option name 'cloudflare'
+	option ip '1.1.1.1'
+	option type 'udp'
+	option server_group 'cn'
+
