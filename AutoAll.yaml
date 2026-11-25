@@ -143,13 +143,13 @@ dns:
   fake-ip-filter:
     - "rule-set:fakeipfilter_domain"
   default-nameserver:
-    - https://223.5.5.5/dns-query
+    - 223.5.5.5
+    - 119.29.29.29
   proxy-server-nameserver:
     #- https://223.5.5.5/dns-query
     #- https://119.29.29.29/dns-query
-    #- 223.5.5.5
-    #- 119.29.29.29
     - https://dns.alidns.com/dns-query
+    - https://dns.quad9.net/dns-query
     - https://doh.pub/dns-query
   nameserver:
     - https://dns.alidns.com/dns-query
